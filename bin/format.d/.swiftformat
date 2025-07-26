@@ -20,5 +20,6 @@
 --enable sortSwitchCases
 
 # Opt-out.
+--disable preferForLoop
 --disable trailingClosures
 --disable wrapMultilineConditionalAssignment
