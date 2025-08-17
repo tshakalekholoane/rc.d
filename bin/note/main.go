@@ -19,7 +19,7 @@ var home = func() string {
 }()
 
 func main() {
-	dir := flag.String("dir", filepath.Join(home, "x", "notes"), "notes directory")
+	dir := flag.String("dir", filepath.Join(home, "Documents", "notes"), "notes directory")
 	html := flag.Bool("html", false, "open note in browser")
 	list := flag.Bool("list", false, "list notes")
 	flag.Parse()
