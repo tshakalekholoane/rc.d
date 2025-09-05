@@ -20,8 +20,8 @@ local function find_in_file()
   })
 end
 
+vim.keymap.set("n", "<leader>f/", find_in_file, { desc = "Find in file" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "[f]ind [b]uffers" })
-vim.keymap.set("n", "<leader>fc", find_in_file, { desc = "Find in file" })
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "[f]ind [f]ile" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "[f]ile [g]rep" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[f]ind in [h]elp" })
