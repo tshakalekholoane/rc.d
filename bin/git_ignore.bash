@@ -65,3 +65,5 @@ main() {
       cp "${REPOSITORY}/$1.gitignore" ./.gitignore
   esac
 }
+
+main "$@"
