@@ -1,4 +1,4 @@
-# See https://tshaka.dev/a/IJ9URW.
+# See https://tshaka.dev/a/ij9urw.
 
 # Default.
 --binarygrouping 4
@@ -7,7 +7,7 @@
 --hexliteralcase "lowercase"
 --indent 2
 --self "insert"
---swiftversion 6.0
+--swiftversion 6.2
 --wraparguments "before-first"
 --wrapcollections "before-first"
 --wrapparameters "before-first"
@@ -17,9 +17,9 @@
 --enable blankLineAfterImports
 --enable blankLinesBetweenImports
 --enable docComments
---enable sortSwitchCases
 
 # Opt-out.
 --disable preferForLoop
+--disable preferKeyPath
 --disable trailingClosures
 --disable wrapMultilineConditionalAssignment
