@@ -1,4 +1,4 @@
-# See https://tshaka.dev/a/18JJW37.
+# See https://tshaka.dev/a/18jjw37.
 
 AlignAfterOpenBracket:  BlockIndent
 AlignArrayOfStructures: Right
@@ -6,8 +6,9 @@ AlignConsecutiveAssignments:
   AlignCompound: true
   Enabled:       true
   PadOperators:  true
-AlignConsecutiveBitFields: Consecutive
-AlignConsecutiveMacros:    Consecutive
+AlignConsecutiveBitFields:    Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros:       Consecutive
 AlignConsecutiveShortCaseStatements:
   AlignCaseArrows: true
   Enabled: true
@@ -16,6 +17,8 @@ AlignEscapedNewlines: LeftWithLastLine
 AllowShortBlocksOnASingleLine:     Empty
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine:  Empty
+
+BinPackArguments: false
 
 BitFieldColonSpacing: After
 
@@ -30,8 +33,7 @@ ColumnLimit: 0
 
 ContinuationIndentWidth: 2
 
-# TODO: clang-format 21.
-# EnumTrailingComma: Remove
+EnumTrailingComma: Remove
 
 IncludeBlocks: Regroup
 
