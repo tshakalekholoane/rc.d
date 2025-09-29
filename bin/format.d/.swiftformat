@@ -1,16 +1,17 @@
 # See https://tshaka.dev/a/ij9urw.
 
 # Default.
---binarygrouping 4
---condassignment "always"
+--binarygrouping  4
+--condassignment  "always"
 --decimalgrouping 3
---hexliteralcase "lowercase"
---indent 2
---self "insert"
---swiftversion 6.2
---wraparguments "before-first"
+--hexliteralcase  "lowercase"
+--indent          2
+--self            "insert"
+--swiftversion    6.2
+--trailing-commas multi-element-lists
+--wraparguments   "before-first"
 --wrapcollections "before-first"
---wrapparameters "before-first"
+--wrapparameters  "before-first"
 
 # Opt-in.
 --enable acronyms
