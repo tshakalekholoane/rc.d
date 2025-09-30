@@ -1,65 +1,37 @@
 # See https://tshaka.dev/a/18jjw37.
 
-AlignAfterOpenBracket:  BlockIndent
-AlignArrayOfStructures: Right
+AlignAfterOpenBracket:             BlockIndent
+AlignArrayOfStructures:            Right
 AlignConsecutiveAssignments:
-  AlignCompound: true
-  Enabled:       true
-  PadOperators:  true
-AlignConsecutiveBitFields:    Consecutive
-AlignConsecutiveDeclarations: Consecutive
-AlignConsecutiveMacros:       Consecutive
-AlignConsecutiveShortCaseStatements:
-  AlignCaseArrows: true
-  Enabled: true
-AlignEscapedNewlines: LeftWithLastLine
-
+  AlignCompound:                   true
+  AlignFunctionDeclarations:       true
+  Enabled:                         true
+  PadOperators:                    true
+AlignConsecutiveBitFields:         Consecutive
+AlignConsecutiveDeclarations:      Consecutive
+AlignConsecutiveMacros:            Consecutive
+AlignEscapedNewlines:              LeftWithLastLine
 AllowShortBlocksOnASingleLine:     Empty
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine:  Empty
-
-BinPackArguments: false
-
-BitFieldColonSpacing: After
-
-BracedInitializerIndentWidth: 2
-
-BreakArrays:                    false
-BreakAfterReturnType:           Automatic
-BreakBeforeConceptDeclarations: Allowed
-BreakBeforeTernaryOperators:    false
-
-ColumnLimit: 0
-
-ContinuationIndentWidth: 2
-
-EnumTrailingComma: Remove
-
-IncludeBlocks: Regroup
-
-IndentGotoLabels:   false
-IndentPPDirectives: BeforeHash
-IndentRequires:     false
-
-InsertNewlineAtEOF:   false
-IntegerLiteralSeparator:
-  Binary:  4
-  Decimal: 3
-  Hex:     -1
-
-PointerAlignment: Left
-
-RemoveEmptyLinesInUnwrappedLines: true
-
-RequiresClausePosition: SingleLine
-
-SeparateDefinitionBlocks: Always
-
-SortUsingDeclarations: Lexicographic
-
-SpaceAfterCStyleCast:        true
-SpaceAfterTemplateKeyword:   false
-SpaceBeforeInheritanceColon: false
-SpacesInContainerLiterals:   false
-
-Standard: Latest
+BracedInitializerIndentWidth:      2
+BreakAfterAttributes:              Always
+BreakAfterReturnType:              Automatic
+BreakArrays:                       false
+BreakBeforeTernaryOperators:       false
+BreakStringLiterals:               false
+ColumnLimit:                       0
+ContinuationIndentWidth:           2
+EnumTrailingComma:                 Remove
+IndentGotoLabels:                  false
+IndentPPDirectives:                BeforeHash
+InsertNewlineAtEOF:                true 
+KeepEmptyLines:
+  AtStartOfBlock:                  false 
+  AtStartOfFile:                   false 
+Language:                          C
+PointerAlignment:                  Left
+RemoveEmptyLinesInUnwrappedLines:  true
+SeparateDefinitionBlocks:          Always
+SpaceAfterCStyleCast:              true
+SpacesInContainerLiterals:         false
