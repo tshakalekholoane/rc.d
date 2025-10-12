@@ -6,8 +6,10 @@ font-feature            = zero
 font-size               = 10
 font-synthetic-style    = no-bold,no-italic,no-bold-italic
 
-adjust-cell-height        = 18%
-adjust-underline-position = 16%
+adjust-box-thickness       = 2
+adjust-cell-height         = 18%
+adjust-underline-position  = 16%
+adjust-underline-thickness = 2
 
 theme = semafor
 
