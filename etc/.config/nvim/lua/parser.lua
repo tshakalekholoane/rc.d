@@ -4,7 +4,7 @@ local options = {
   auto_install          = true,
   autotag               = { enable = true },
   ensure_installed      = {
-    -- See https://tshaka.dev/a/UAY02J.
+    -- See https://github.com/nvim-treesitter/nvim-treesitter#supported-languages.
     "asm",
     "bash",
     "c",
