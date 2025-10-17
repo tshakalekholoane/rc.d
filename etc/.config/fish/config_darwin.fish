@@ -7,6 +7,7 @@ if not test $kernel = Darwin
 end
 
 abbr --add --global homebrew_sync "brew bundle install --cleanup --no-lock"
+abbr --add --global make          "gmake"
 
 set --export HOMEBREW_BUNDLE_FILE ~/conf.d/etc/.Brewfile
 
