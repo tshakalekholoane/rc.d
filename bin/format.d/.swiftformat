@@ -2,16 +2,16 @@
 
 # Default.
 --binarygrouping  4
---condassignment  "always"
+--condassignment  always
 --decimalgrouping 3
---hexliteralcase  "lowercase"
+--hexliteralcase  lowercase
 --indent          2
---self            "insert"
+--self            insert
 --swiftversion    6.2
---trailing-commas multi-element-lists
---wraparguments   "before-first"
---wrapcollections "before-first"
---wrapparameters  "before-first"
+--trailing-commas collections-only
+--wraparguments   before-first
+--wrapcollections before-first
+--wrapparameters  before-first
 
 # Opt-in.
 --enable acronyms
