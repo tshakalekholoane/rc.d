@@ -1,41 +1,32 @@
-font-family             = SF Mono
-font-family-bold        =
-font-family-bold-italic =
-font-family-italic      =
-font-feature            = zero
-font-size               = 10
-font-synthetic-style    = no-bold,no-italic,no-bold-italic
-
 adjust-box-thickness       = 2
 adjust-cell-height         = 18%
 adjust-underline-position  = 16%
 adjust-underline-thickness = 2
-
-theme = semafor
-
-mouse-scroll-multiplier = 1
-
-background-blur-radius = 20
-background-opacity     = 0.9
-
-command = /opt/homebrew/bin/fish
-
-keybind = ctrl+a>h=goto_split:left
-keybind = ctrl+a>l=goto_split:right
-keybind = ctrl+a>k=goto_split:top
-keybind = ctrl+a>j=goto_split:bottom
-keybind = ctrl+a>minus=new_split:down
-keybind = ctrl+a>equal=new_split:right
-
-window-padding-x = 10
-window-vsync     = false
-
-click-repeat-interval = 500
-
-macos-option-as-alt  = left
-macos-titlebar-style = native
-
-auto-update         = download
-auto-update-channel = tip
+auto-update                = download
+auto-update-channel        = tip
+background-blur-radius     = 20
+background-opacity         = 0.9
+click-repeat-interval      = 500
+command                    = /opt/homebrew/bin/fish
+font-family                = SF Mono
+font-family-bold           =
+font-family-bold-italic    =
+font-family-italic         =
+font-feature               = zero
+font-size                  = 10
+font-synthetic-style       = no-bold,no-italic,no-bold-italic
+keybind                    = ctrl+a>equal=new_split:right
+keybind                    = ctrl+a>h=goto_split:left
+keybind                    = ctrl+a>j=goto_split:bottom
+keybind                    = ctrl+a>k=goto_split:top
+keybind                    = ctrl+a>l=goto_split:right
+keybind                    = ctrl+a>minus=new_split:down
+macos-option-as-alt        = left
+macos-titlebar-style       = native
+mouse-scroll-multiplier    = 1
+theme                      = semafor
+unfocused-split-opacity    = 0.8
+window-padding-x           = 10
+window-vsync               = false
 
 # vim: filetype=ghostty
