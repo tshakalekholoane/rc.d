@@ -21,3 +21,10 @@ vim.keymap.set("n", "<Leader>x", "<Esc>:x!<CR>",    { desc = ":[x]!"      })
 -- General.
 vim.keymap.set("n", "<Leader>s", "<Esc>:.! snip ", { desc = "Read snip command output"})
 vim.keymap.set("n", "Q",         "<Nop>",          { desc = "Suppress repeating last register" })
+
+-- Language Server.
+local function async_buf_format()
+  vim.lsp.buf.format { async = true }
+end
+
+vim.keymap.set("n", "gf", async_buf_format, { desc = "[F]ormat current buffer" })
