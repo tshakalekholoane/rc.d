@@ -27,4 +27,5 @@ local function async_buf_format()
   vim.lsp.buf.format { async = true }
 end
 
-vim.keymap.set("n", "gf", async_buf_format, { desc = "[F]ormat current buffer" })
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "[G]o to [d]efinition"    })
+vim.keymap.set("n", "gf", async_buf_format,       { desc = "[F]ormat current buffer" })
