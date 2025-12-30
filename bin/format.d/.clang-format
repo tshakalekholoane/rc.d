@@ -24,13 +24,15 @@ ColumnLimit:                       0
 ContinuationIndentWidth:           2
 Cpp11BracedListStyle:              false
 EnumTrailingComma:                 Remove
+FixNamespaceComments:              false
+IndentExternBlock:                 Indent
 IndentGotoLabels:                  false
 IndentPPDirectives:                BeforeHash
 InsertNewlineAtEOF:                true 
 KeepEmptyLines:
   AtStartOfBlock:                  false 
   AtStartOfFile:                   false 
-Language:                          C
+NamespaceIndentation:              All
 PointerAlignment:                  Left
 RemoveEmptyLinesInUnwrappedLines:  true
 SeparateDefinitionBlocks:          Always
