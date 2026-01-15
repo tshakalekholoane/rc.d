@@ -166,7 +166,7 @@ local groups = {
   GitSignsDelete           = { fg = "#af1f1b" },
   GitSignsChange           = { fg = "#f2cc7c" },
 
-  -- See plugin/telescope.lua.
+  -- See https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.lua.
   TelescopeBorder          = { fg = "#d7d4ba" },
   TelescopeSelection       = { bg = "#ece9d2", fg = "#1f1d1a" },
   TelescopeTitle           = { bold = true, fg = "#66655d" },
