@@ -33,7 +33,6 @@ KeepEmptyLines:
   AtStartOfBlock:                  false 
   AtStartOfFile:                   false 
 NamespaceIndentation:              All
-PointerAlignment:                  Left
 RemoveEmptyLinesInUnwrappedLines:  true
 SeparateDefinitionBlocks:          Always
 SpaceAfterCStyleCast:              true
