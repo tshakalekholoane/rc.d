@@ -31,3 +31,5 @@ etc/.config/nvim/spell/*.spl
 !etc/.config/zed/
 etc/.config/zed/*
 !etc/.config/zed/settings.json
+
+etc/.ssh/*

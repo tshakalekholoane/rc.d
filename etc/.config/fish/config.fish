@@ -11,7 +11,6 @@ abbr --add --global vf "nvim (fzf --scheme path)"
 set --export CLICOLOR 1
 set --export FZF_DEFAULT_COMMAND "fd --type file --follow --hidden --exclude .git"
 set --export GNUPGHOME ~/.config/gnupg
-set --export GPG_TTY (tty)
 set --unexport fish_greeting
 
 set --local fish_config_dir (status dirname)
@@ -29,5 +28,4 @@ fish_add_path --global ~/.cargo/bin ~/bin ~/go/bin
 
 fish_hybrid_key_bindings
 
-gpgconf --launch gpg-agent
 umask 0002
