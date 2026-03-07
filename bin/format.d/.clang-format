@@ -3,19 +3,22 @@
 AlignAfterOpenBracket:             BlockIndent
 AlignArrayOfStructures:            Right
 AlignConsecutiveAssignments:
+  Enabled:                         true
   AlignCompound:                   true
   AlignFunctionDeclarations:       true
-  Enabled:                         true
   PadOperators:                    true
-AlignConsecutiveBitFields:         Consecutive
-AlignConsecutiveDeclarations:      Consecutive
 AlignConsecutiveMacros:            Consecutive
 AlignEscapedNewlines:              LeftWithLastLine
 AllowShortBlocksOnASingleLine:     Empty
-AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine:  Empty
+AllowShortLambdasOnASingleLine:    Empty
+AttributeMacros:
+  - hint_enum_extensibility
+  - hint_flag_enum
+  - hint_must_use
+  - hint_nonnull
+  - hint_returns_nonnull
 BracedInitializerIndentWidth:      2
-BreakAfterAttributes:              Always
 BreakAfterReturnType:              Automatic
 BreakArrays:                       false
 BreakBeforeTernaryOperators:       false
@@ -28,11 +31,16 @@ FixNamespaceComments:              false
 IndentExternBlock:                 Indent
 IndentGotoLabels:                  false
 IndentPPDirectives:                BeforeHash
-InsertNewlineAtEOF:                true 
+InsertNewlineAtEOF:                true
 KeepEmptyLines:
-  AtStartOfBlock:                  false 
-  AtStartOfFile:                   false 
+  AtStartOfBlock:                  false
+  AtStartOfFile:                   false
 NamespaceIndentation:              All
+PointerAlignment:                  Left
 RemoveEmptyLinesInUnwrappedLines:  true
 SeparateDefinitionBlocks:          Always
 SpaceAfterCStyleCast:              true
+SpaceBeforeCpp11BracedList:        true
+TypenameMacros:
+  - dyn_array_t
+  - slice_t
