@@ -1,5 +1,3 @@
-local function format()
-  vim.cmd("!jq --indent 2 '.' % > %~ && mv %~ %")
-end
+local format = require "format"
 
-vim.keymap.set("n", "<space>f", format, { desc = "Format JSON" })
+format.set_program("jq '.'")

@@ -1,7 +1,5 @@
+local format = require "format"
 
-local function format()
-  vim.cmd(":silent !swiftformat '%'")
-end
 vim.opt_local.commentstring = "// %s"
 
-vim.keymap.set("n", "<space>f", format, { desc = "Format Swift file" })
+format.set_program("swiftformat --quiet --stdin-path " .. vim.fn.expand("%:p"))
