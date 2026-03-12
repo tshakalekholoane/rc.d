@@ -1,2 +1,6 @@
-vim.opt.wrap      = true
-vim.opt.linebreak = true
+local format = require "format"
+
+vim.opt_local.linebreak = true
+vim.opt_local.wrap = true
+
+format.set_program("prettier --parser markdown")
