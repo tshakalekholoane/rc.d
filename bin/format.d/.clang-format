@@ -1,46 +1,48 @@
 # See https://tshaka.dev/a/18jjw37.
 
-AlignAfterOpenBracket:             BlockIndent
-AlignArrayOfStructures:            Right
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: Right
 AlignConsecutiveAssignments:
-  Enabled:                         true
-  AlignCompound:                   true
-  AlignFunctionDeclarations:       true
-  PadOperators:                    true
-AlignConsecutiveMacros:            Consecutive
-AlignEscapedNewlines:              LeftWithLastLine
-AllowShortBlocksOnASingleLine:     Empty
-AllowShortFunctionsOnASingleLine:  Empty
-AllowShortLambdasOnASingleLine:    Empty
+  Enabled: true
+  AlignCompound: true
+  AlignFunctionDeclarations: true
+  PadOperators: true
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: LeftWithLastLine
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
 AttributeMacros:
   - hint_enum_extensibility
   - hint_flag_enum
   - hint_must_use
   - hint_nonnull
   - hint_returns_nonnull
-BracedInitializerIndentWidth:      2
-BreakAfterReturnType:              Automatic
-BreakArrays:                       false
-BreakBeforeTernaryOperators:       false
-BreakStringLiterals:               false
-ColumnLimit:                       0
-ContinuationIndentWidth:           2
-Cpp11BracedListStyle:              false
-EnumTrailingComma:                 Remove
-FixNamespaceComments:              false
-IndentExternBlock:                 Indent
-IndentGotoLabels:                  false
-IndentPPDirectives:                BeforeHash
-InsertNewlineAtEOF:                true
+BracedInitializerIndentWidth: 2
+BreakAfterReturnType: Automatic
+BreakArrays: false
+BreakBeforeTernaryOperators: false
+BreakStringLiterals: false
+ColumnLimit: 0
+ContinuationIndentWidth: 2
+Cpp11BracedListStyle: false
+EnumTrailingComma: Remove
+FixNamespaceComments: false
+IncludeIsMainRegex: "NOMATCH^"
+IndentExternBlock: Indent
+IndentGotoLabels: false
+IndentPPDirectives: BeforeHash
+InsertNewlineAtEOF: true
 KeepEmptyLines:
-  AtStartOfBlock:                  false
-  AtStartOfFile:                   false
-NamespaceIndentation:              All
-PointerAlignment:                  Left
-RemoveEmptyLinesInUnwrappedLines:  true
-SeparateDefinitionBlocks:          Always
-SpaceAfterCStyleCast:              true
-SpaceBeforeCpp11BracedList:        true
+  AtStartOfBlock: false
+  AtStartOfFile: false
+NamespaceIndentation: All
+PointerAlignment: Left
+RemoveEmptyLinesInUnwrappedLines: true
+SeparateDefinitionBlocks: Always
+SpaceAfterCStyleCast: true
+SpaceBeforeCpp11BracedList: true
 TypenameMacros:
+  - box_t
   - dyn_array_t
   - slice_t
