@@ -1,45 +1,45 @@
 [commit]
-	gpgSign = true
-	verbose = true
+  gpgSign = true
+  verbose = true
 
 [core]
-	editor       = nvim
-	excludesFile = ~/.config/git/gitignore
+  editor = nvim
+  excludesFile = ~/.config/git/gitignore
 
 [diff]
-	algorithm = histogram
+  external = difft
 
 [fetch]
-	prune     = true
-	pruneTags = true
+  prune = true
+  pruneTags = true
 
 [filter "lfs"]
-	clean    = git-lfs clean -- %f
-	smudge   = git-lfs smudge -- %f
-	process  = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	required = true
 
 [gpg]
-	format = ssh
+  format = ssh
 
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+  allowedSignersFile = ~/.ssh/allowed_signers
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [log]
-	date = iso
+  date = iso
 
 [push]
-	autoSetupRemote = true
-	default         = current
-	followTags      = true
+  autoSetupRemote = true
+  default = current
+  followTags = true
 
 [url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
 
 [user]
-	email      = mail+git@tshaka.dev
-	name       = Tshaka Lekholoane
-	signingKey = ~/.ssh/id_ed25519_github.pub
+  email = mail+git@tshaka.dev
+  name = Tshaka Lekholoane
+  signingKey = ~/.ssh/id_ed25519_github.pub
