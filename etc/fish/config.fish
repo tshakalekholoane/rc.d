@@ -1,17 +1,16 @@
-abbr --add --global f format
-abbr --add --global less "less -FIRX"
+abbr --add --global less "less -FINRX"
 abbr --add --global ll "ls -lhAF"
 abbr --add --global ls "ls -F"
 abbr --add --global m mkdir_and_cd
 abbr --add --global p python3
-abbr --add --global s search
-abbr --add --global t tiny
+abbr --add --global s snip
+abbr --add --global ss site_search
 abbr --add --global v nvim
 abbr --add --global vf "nvim (fzf --scheme path)"
 
 set --export CLICOLOR 1
 set --export FZF_DEFAULT_COMMAND "fd --type file --follow --hidden --exclude .git"
-set --export GNUPGHOME ~/.config/gnupg
+set --export GOPRIVATE "tshaka.dev/{bucket,notifications}"
 set --unexport fish_greeting
 
 set --local fish_config_dir (status dirname)
@@ -26,7 +25,6 @@ if test $status != 0
 end
 
 fish_add_path --global ~/.cargo/bin ~/bin ~/go/bin
-
+fish_config theme choose mu
 fish_hybrid_key_bindings
-
 umask 0002
