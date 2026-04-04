@@ -1,0 +1,26 @@
+# See https://tshaka.dev/a/IJ9URW.
+
+# Default.
+--binarygrouping  4
+--condassignment  always
+--decimalgrouping 3
+--hexliteralcase  lowercase
+--indent          2
+--self            insert
+--swiftversion    6.3
+--trailing-commas collections-only
+--wraparguments   before-first
+--wrapcollections before-first
+--wrapparameters  before-first
+
+# Opt-in.
+--enable acronyms
+--enable blankLineAfterImports
+--enable blankLinesBetweenImports
+--enable docComments
+
+# Opt-out.
+--disable preferForLoop
+--disable preferKeyPath
+--disable trailingClosures
+--disable wrapMultilineConditionalAssignment
