@@ -6,7 +6,7 @@
     <string>dev.tshaka.remap</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/tshaka/bin/darwin_remap</string>
+        <string>/Users/tshaka/bin/apple_remap</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

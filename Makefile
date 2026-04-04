@@ -24,12 +24,14 @@ ETC =             \
   etc/sqlite3     \
   etc/yt-dlp      \
   etc/zed
+OPT =
 
 ifeq ($(TARGET), Darwin)
   CONFIG_DIR = $(CONFIG_DIR_XNU)
 
   BIN += bin/apple_remap/apple_remap bin/can/.build/release/can
   ETC += etc/homebrew etc/rectangle
+  OPT += opt/dev.tshaka.remap.plist
 else ifeq ($(TARGET), Linux)
   CONFIG_DIR = $(CONFIG_DIR_XDG)
 
@@ -112,9 +114,13 @@ etc/yt-dlp:
 etc/zed:
 > @ln -fns $(abspath $@) $(CONFIG_DIR_XDG)/zed
 
+.PHONY: opt/dev.tshaka.remap.plist
+opt/dev.tshaka.remap.plist:
+> @ln -fns $(abspath $@) $(HOME)/Library/LaunchAgents/$(notdir $@)
+
 ## install: create symbolic links for binaries and configuration files
 .PHONY: install
-install: $(BIN) $(ETC)
+install: $(BIN) $(ETC) $(OPT)
 > @mkdir -p $(HOME)/bin/
 > @$(foreach bin, $(BIN), \
   ln -fns $(abspath $(bin)) $(HOME)/bin/$(notdir $(bin));)
