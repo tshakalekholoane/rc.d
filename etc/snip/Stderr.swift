@@ -2,7 +2,7 @@ import Foundation
 
 /// Output stream that directs data to standard error.
 ///
-/// - SeeAlso: [Standard library's internal `_Stdout`](https://github.com/swiftlang/swift/blob/b866471e8c03512f81ff71abc97729130f035a25/stdlib/public/core/OutputStream.swift#L559-L578)
+/// - SeeAlso: [Standard library's internal `_Stdout`](https://tshaka.dev/a/1TOJ1CJ).
 struct Stderr: TextOutputStream {
   /// ``TextOutputStream`` conformance.
   func write(_ string: String) {
