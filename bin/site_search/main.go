@@ -1,4 +1,4 @@
-// / Package search provides site search in the terminal.
+// Binary site_search provides site search in the terminal.
 package main
 
 import (
@@ -19,12 +19,24 @@ import (
 	"text/tabwriter"
 )
 
+const usage = `Search shortcuts.
+
+USAGE
+  site_search <key> <query>         Open URL for shortcut <key> with <query>
+  site_search add <key> <template>  Add a new shortcut (template must contain %%s)
+  site_search list                  List all shortcuts
+  site_search help                  Show this help document
+
+EXAMPLES
+  site_search add g https://www.google.com/search?q=%%s
+  site_search g "What is the weather like today?"`
+
 func config() (string, error) {
 	d, err := os.UserConfigDir()
 	if err != nil {
 		return "", err
 	}
-	return filepath.Join(d, "search", "config"), nil
+	return filepath.Join(d, "site_search", "config"), nil
 }
 
 func load(conf string) (map[string]string, error) {
@@ -176,25 +188,15 @@ func search(k, q string) error {
 }
 
 func main() {
-	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, `search — search shortcuts
-
-USAGE
-  search <key> <query>         Open URL for shortcut <key> with <query>
-  search add <key> <template>  Add a new shortcut (template must contain %%s)
-  search list                  List all shortcuts
-  search help                  Show this help document
-
-EXAMPLES
-  search add g https://www.google.com/search?q=%%s
-  search g "What is the weather like today?"
-`)
-	}
-
-	flag.Parse()
-
 	log.SetFlags(0)
-	log.SetPrefix("search: ")
+	log.SetPrefix("site_search: ")
+
+	flag.Usage = func() {
+		if _, err := fmt.Fprintf(os.Stderr, usage); err != nil {
+			log.Fatalln(err)
+		}
+	}
+	flag.Parse()
 
 	if flag.NArg() == 0 {
 		flag.Usage()
