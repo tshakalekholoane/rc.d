@@ -1,24 +1,24 @@
 // See https://zed.dev/docs/configuring-zed.
 {
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
-  },
-  "buffer_font_family": "SF Mono",
   "auto_update": true,
   "autosave": "on_focus_change",
-  "buffer_font_size": 10,
+  "buffer_font_family": "SF Mono",
   "buffer_font_features": {
     "calt": false,
     "zero": true,
   },
+  "buffer_font_size": 10,
   "disable_ai": true,
   "format_on_save": "off",
   "git": {
     "inline_blame": {
       "enabled": false,
     },
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
   },
   "languages": {
     "C": {
@@ -31,6 +31,9 @@
   "max_tabs": 1,
   "relative_line_numbers": "enabled",
   "show_completions_on_input": false,
+  "sticky_scroll": {
+    "enabled": true,
+  },
   "tab_size": 2,
   "telemetry": {
     "diagnostics": false,
@@ -43,9 +46,6 @@
     "mode": "system",
     "dark": "One Dark",
     "light": "One Light",
-  },
-  "sticky_scroll": {
-    "enabled": true,
   },
   "ui_font_size": 13,
   "vim_mode": true,
