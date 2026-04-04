@@ -5,21 +5,23 @@ selection-foreground = 1f1d1a
 selection-background = bfccba
 
 palette = 0=#f8f5d7
-palette = 8=#b3b19b
+palette = 8=#aca995
 palette = 1=#af1f1b
-palette = 9=#af1f1b
+palette = 9=#bc4d2c
 palette = 2=#6b8842
 palette = 10=#77984a
 palette = 3=#8e6437
 palette = 11=#8e6437
 palette = 4=#3a6d78
-palette = 12=#3a6d78
-palette = 5=#56544a
-palette = 13=#56544a
+palette = 12=#447a8e
+palette = 5=#735e71
+palette = 13=#7f677c
 palette = 6=#385541
-palette = 14=#385541
-palette = 7=#1f1d1a
+palette = 14=#3E5E48
+palette = 7=#d7d5bb
 palette = 15=#1f1d1a
 
 cursor-color = 3a6d78
-cursor-text  = f8f5d7
+cursor-text = f8f5d7
+
+# vim: filetype=ghostty
