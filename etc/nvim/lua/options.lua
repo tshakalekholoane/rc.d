@@ -1,0 +1,55 @@
+vim.diagnostic.config({
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.HINT]  = "",
+            [vim.diagnostic.severity.INFO]  = "",
+            [vim.diagnostic.severity.WARN]  = "",
+        },
+    },
+})
+vim.diagnostic.enable(false)
+
+vim.g.netrw_banner           = 0
+vim.g.netrw_liststyle        = 3
+vim.g.rust_recommended_style = 0
+vim.g.rustfmt_autosave       = 1
+
+function _G.foldtext()
+    return ""
+end
+
+vim.opt.breakindent    = true
+vim.opt.clipboard      = "unnamedplus"
+vim.opt.cmdheight      = 0
+vim.opt.colorcolumn    = "72,80,100"
+vim.opt.completeopt    = { "menuone", "noselect" }
+vim.opt.cursorline     = true
+vim.opt.fillchars      = { foldsep = " " }
+vim.opt.foldcolumn     = "2"
+vim.opt.foldenable     = false
+vim.opt.foldmethod     = "indent"
+vim.opt.foldnestmax    = 1
+vim.opt.foldtext       = "v:lua.foldtext()"
+vim.opt.hlsearch       = false
+vim.opt.ignorecase     = true
+vim.opt.inccommand     = "split"
+vim.opt.incsearch      = true
+vim.opt.laststatus     = 3
+vim.opt.list           = true
+vim.opt.listchars      = { tab = "➔ ", trail = "·" }
+vim.opt.mouse          = "a"
+vim.opt.number         = true
+vim.opt.relativenumber = true
+vim.opt.scrolloff      = 8
+vim.opt.shiftwidth     = 2
+vim.opt.showmode       = false
+vim.opt.smartcase      = true
+vim.opt.spelllang      = "en_gb"
+vim.opt.spelloptions   = "camel"
+vim.opt.splitbelow     = true
+vim.opt.splitright     = true
+vim.opt.tabstop        = 2
+vim.opt.undofile       = true
+vim.opt.updatetime     = 1000
+vim.opt.wrap           = false
