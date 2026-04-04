@@ -1,0 +1,5 @@
+crate,https://crates.io/search?q=%s
+crypto,https://finance.yahoo.com/lookup/cryptocurrency/?s=%s
+g,https://www.google.com/search?q=%s
+go,https://pkg.go.dev/search?q=%s
+rs,https://doc.rust-lang.org/nightly/std/index.html?search=%s

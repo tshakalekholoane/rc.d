@@ -5,4 +5,5 @@ use (
 	./apple_remap
 	./gnome_remap
 	./site_search
+	./snip
 )

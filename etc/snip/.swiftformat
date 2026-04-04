@@ -7,7 +7,7 @@
 --hexliteralcase  lowercase
 --indent          2
 --self            insert
---swiftversion    6.2
+--swiftversion    6.3
 --trailing-commas collections-only
 --wraparguments   before-first
 --wrapcollections before-first
