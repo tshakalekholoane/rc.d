@@ -7,6 +7,7 @@ abbr --add --global s snip
 abbr --add --global ss site_search
 abbr --add --global v nvim
 abbr --add --global vf "nvim (fzf --scheme path)"
+abbr --add --global vs "nvim -c \"setlocal buftype=nofile bufhidden=hide noswapfile filetype=markdown\""
 
 set --export CLICOLOR 1
 set --export FZF_DEFAULT_COMMAND "fd --type file --follow --hidden --exclude .git"
