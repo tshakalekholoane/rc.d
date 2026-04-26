@@ -36,7 +36,4 @@ lazy.setup({
   install = {
     colorscheme = { "mu" },
   },
-  checker = {
-    enabled = true,
-  },
 })
