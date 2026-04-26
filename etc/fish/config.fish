@@ -10,7 +10,7 @@ abbr --add --global vf "nvim (fzf --scheme path)"
 abbr --add --global vs "nvim -c \"setlocal buftype=nofile bufhidden=hide noswapfile filetype=markdown\""
 
 set --export CLICOLOR 1
-set --export FZF_DEFAULT_COMMAND "fd --type file --follow --hidden --exclude .git"
+set --export FZF_DEFAULT_COMMAND "fd --color never  --exclude .git --follow --hidden --type file"
 set --export GOPRIVATE "tshaka.dev/{bucket,notifications}"
 set --unexport fish_greeting
 
