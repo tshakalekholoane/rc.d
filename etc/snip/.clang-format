@@ -42,7 +42,10 @@ RemoveEmptyLinesInUnwrappedLines: true
 SeparateDefinitionBlocks: Always
 SpaceAfterCStyleCast: true
 SpaceBeforeCpp11BracedList: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterNot: true
 TypenameMacros:
-  - box_t
   - dyn_array_t
+  - slice_mut_t
   - slice_t
