@@ -1,7 +1,7 @@
 adjust-box-thickness = 2
-adjust-cell-height = 32%
 adjust-underline-position = 4%
 adjust-underline-thickness = 48%
+adjust-cell-height = 43%
 auto-update = download
 auto-update-channel = tip
 background-blur-radius = 20
