@@ -5,11 +5,11 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"html/template"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+	"text/template"
 )
 
 type pairs map[string]string
