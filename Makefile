@@ -49,8 +49,8 @@ bin/apple_remap/apple_remap: \
 > @env $(GENV) go build -C $(@D) $(GFLAGS)
 
 bin/can/.build/release/can:                 \
+  bin/can/Package.swift                     \
   bin/can/Sources/Optional+Extensions.swift \
-  bin/can/Sources/Package.swift             \
   bin/can/Sources/Stderr.swift              \
   bin/can/Sources/main.swift
 > @swift build --configuration release --package-path bin/can/
