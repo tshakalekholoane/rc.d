@@ -104,7 +104,7 @@ etc/snip:
 
 .PHONY: etc/sqlite3
 etc/sqlite3:
-> @ln -fns $(abspath $@) $(CONFIG_DIR)/sqlite3
+> @ln -fns $(abspath $@) $(CONFIG_DIR_XDG)/sqlite3
 
 .PHONY: etc/yt-dlp
 etc/yt-dlp:
