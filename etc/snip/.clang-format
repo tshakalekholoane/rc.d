@@ -1,7 +1,7 @@
 # See https://tshaka.dev/a/18jjw37.
 
 AlignAfterOpenBracket: BlockIndent
-AlignArrayOfStructures: Right
+AlignArrayOfStructures: Left
 AlignConsecutiveAssignments:
   Enabled: true
   AlignCompound: true
@@ -13,11 +13,7 @@ AllowShortBlocksOnASingleLine: Empty
 AllowShortFunctionsOnASingleLine: Empty
 AllowShortLambdasOnASingleLine: Empty
 AttributeMacros:
-  - hint_enum_extensibility
-  - hint_flag_enum
-  - hint_must_use
   - hint_nonnull
-  - hint_returns_nonnull
 BracedInitializerIndentWidth: 2
 BreakAfterReturnType: Automatic
 BreakArrays: false
@@ -28,7 +24,7 @@ ContinuationIndentWidth: 2
 Cpp11BracedListStyle: false
 EnumTrailingComma: Remove
 FixNamespaceComments: false
-IncludeIsMainRegex: "NOMATCH^"
+IncludeIsMainRegex: NOMATCH^
 IndentExternBlock: Indent
 IndentGotoLabels: false
 IndentPPDirectives: BeforeHash
@@ -46,6 +42,9 @@ SpaceBeforeParens: Custom
 SpaceBeforeParensOptions:
   AfterNot: true
 TypenameMacros:
+  - comptime
   - dyn_array_t
+  - let
   - slice_mut_t
   - slice_t
+  - var
