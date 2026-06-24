@@ -10,6 +10,7 @@ abbr --add --global homebrew_sync "brew bundle install --cleanup --no-lock"
 abbr --add --global make gmake
 
 set --export HOMEBREW_BUNDLE_FILE ~/conf.d/etc/.Brewfile
+set --export HOMEBREW_NO_ASK 1
 
 if test $arch = arm64
     # See the following for details:
