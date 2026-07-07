@@ -166,10 +166,12 @@ local groups = {
   GitSignsChange            = { fg = "#f2cc7c" },
   GitSignsDelete            = { fg = "#af1f1b" },
 
-  -- See https://tshaka.dev/1GSCG1R.
+  -- See https://tshaka.dev/1gscg1r.
   TelescopeBorder           = { fg = "#d7d4ba" },
   TelescopeSelection        = { bg = "#ece9d2", fg = "#1f1d1a" },
   TelescopeTitle            = { bold = true, fg = "#66655d" },
+
+  SnacksIndentScope         = { fg = "#edeacd" },
 
   -- See treesitter-highlight-groups.
   ["@comment.error"]        = { link = "@comment.todo" },

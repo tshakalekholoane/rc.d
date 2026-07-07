@@ -82,6 +82,8 @@ local groups = {
   GitSignsDelete       = { fg = "#d79987" },
   GitSignsChange       = { fg = "#ffe7a4" },
 
+  SnacksIndentScope    = { fg = "#2a2823" },
+
   TelescopeBorder      = { fg = "#2a2823" },
   TelescopeTitle       = { fg = "#b0ad98" },
   TelescopeSelection   = { bg = "#35332d", fg = "#f8f5d7" },
