@@ -16,7 +16,6 @@ vim.lsp.config("sourcekit", {
 })
 
 vim.lsp.enable({
-  "asm_lsp",
   "clangd",
   "cssls",
   "denols",
