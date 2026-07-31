@@ -7,6 +7,7 @@ AlignConsecutiveAssignments:
   AlignCompound: true
   AlignFunctionDeclarations: true
   PadOperators: true
+AlignConsecutiveDeclarations: Consecutive
 AlignConsecutiveMacros: Consecutive
 AlignEscapedNewlines: LeftWithLastLine
 AllowShortBlocksOnASingleLine: Empty
@@ -17,6 +18,7 @@ AttributeMacros:
 BracedInitializerIndentWidth: 2
 BreakAfterReturnType: Automatic
 BreakArrays: false
+BreakBeforeBraces: Allman
 BreakBeforeTernaryOperators: false
 BreakStringLiterals: false
 ColumnLimit: 0
@@ -36,11 +38,14 @@ NamespaceIndentation: All
 PointerAlignment: Left
 RemoveEmptyLinesInUnwrappedLines: true
 SeparateDefinitionBlocks: Always
+SortIncludes: Natural
 SpaceAfterCStyleCast: true
 SpaceBeforeCpp11BracedList: true
 SpaceBeforeParens: Custom
 SpaceBeforeParensOptions:
   AfterNot: true
+StatementAttributeLikeMacros:
+  - defer
 TypenameMacros:
   - comptime
   - dyn_array_t
@@ -48,3 +53,7 @@ TypenameMacros:
   - slice_mut_t
   - slice_t
   - var
+WhitespaceSensitiveMacros:
+  - and
+  - or
+  - not
