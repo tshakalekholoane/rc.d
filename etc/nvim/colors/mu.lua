@@ -173,6 +173,9 @@ local groups = {
 
   SnacksIndentScope         = { fg = "#edeacd" },
 
+  XcodeMarkLine             = { bg = "#f3f0d3", bold = true },
+  XcodeMarkLineNr           = { bg = "#f3f0d3" },
+
   -- See treesitter-highlight-groups.
   ["@comment.error"]        = { link = "@comment.todo" },
   ["@comment.note"]         = { link = "@comment.todo" },

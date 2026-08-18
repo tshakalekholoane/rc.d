@@ -88,6 +88,9 @@ local groups = {
   TelescopeTitle       = { fg = "#b0ad98" },
   TelescopeSelection   = { bg = "#35332d", fg = "#f8f5d7" },
 
+  XcodeMarkLine        = { bg = "#221f1c", bold = true },
+  XcodeMarkLineNr      = { bg = "#221f1c" },
+
   -- See treesitter-highlight-groups.
 
   ["@attribute"]       = { link = "Keyword" },
