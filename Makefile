@@ -17,6 +17,7 @@ ETC =             \
   etc/fish        \
   etc/ghostty     \
   etc/git         \
+  etc/lldb        \
   etc/login       \
   etc/nvim        \
   etc/site_search \
@@ -43,8 +44,8 @@ endif
 bin/a/a: bin/a/go.mod bin/a/main.go
 > @env $(GENV) go build -C $(@D) $(GFLAGS)
 
-bin/apple_remap/apple_remap: \
-  bin/apple_remap/go.mod     \
+bin/apple_remap/apple_remap:     \
+  bin/apple_remap/go.mod         \
   bin/apple_remap/main_darwin.go
 > @env $(GENV) go build -C $(@D) $(GFLAGS)
 
@@ -55,8 +56,8 @@ bin/can/.build/release/can:                 \
   bin/can/Sources/main.swift
 > @swift build --configuration release --package-path bin/can/
 
-bin/gnome_remap/gnome_remap: \
-  bin/gnome_remap/go.mod     \
+bin/gnome_remap/gnome_remap:    \
+  bin/gnome_remap/go.mod        \
   bin/gnome_remap/main_linux.go
 > @env $(GENV) go build -C $(@D) $(GFLAGS)
 
@@ -81,6 +82,10 @@ etc/git:
 .PHONY: etc/homebrew
 etc/homebrew:
 > @ln -fns $(abspath $@) $(CONFIG_DIR_XDG)/homebrew
+
+.PHONY: etc/lldb
+etc/lldb:
+> ln -fns $(abspath $@)/.lldbinit $(HOME)/
 
 .PHONY: etc/login
 etc/login:

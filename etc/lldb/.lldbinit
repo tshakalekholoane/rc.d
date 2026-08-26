@@ -1,0 +1,4 @@
+command script import ~/Sources/rc.d/etc/lldb/type_summary.py
+type summary add -F type_summary.opt_str8 opt_str8_t
+type summary add -F type_summary.str8     box_str8_t
+type summary add -F type_summary.str8     str8_t
