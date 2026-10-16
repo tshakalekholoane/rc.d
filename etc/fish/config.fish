@@ -1,6 +1,6 @@
 abbr --add --global less "less -FINRX"
 abbr --add --global ll "ls -lhAF"
-abbr --add --global ls "ls -F"
+abbr --add --global ls "ls -1F"
 abbr --add --global m mkdir_and_cd
 abbr --add --global p python3
 abbr --add --global s snip
