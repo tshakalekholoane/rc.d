@@ -25,7 +25,6 @@ vim.lsp.enable({
   "lua_ls",
   "pyright",
   "ruff",
-  "ruff_lsp",
   "rust_analyzer",
   "sourcekit",
   "tombi",
